@@ -8,6 +8,10 @@
 
 <p>This is an example for the <a href="https://www.devexpress.com/Support/Center/p/A237">How to filter a second LookUp column based on a first LookUp column's value</a> Knowledge Base article. Please refer to the article for the explanation.</p>
 
+<b>See also:</b>
+
+[DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
+
 <br/>
 
 
