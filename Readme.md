@@ -12,7 +12,7 @@ This example demonstrates how to filter a Lookup editor's data source based on a
 
 <!-- default file list -->
 ## Files to Look At
-* **[MainForm.cs](./CS/DxSample/MainForm.cs) (VB: [MainForm.vb](./VB/DxSample/MainForm.vb))**
+* [MainForm.cs](./CS/DxSample/MainForm.cs) (VB: [MainForm.vb](./VB/DxSample/MainForm.vb))
 <!-- default file list end -->
 
 ## Documentation 
