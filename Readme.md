@@ -16,6 +16,7 @@ This example demonstrates how to filter a Lookup editor's data source based on a
 <!-- default file list end -->
 
 ## Documentation 
+- [Lookup Editors](https://docs.devexpress.com/WindowsForms/116008/controls-and-libraries/editors-and-simple-controls/lookup-editors)
 - [Cascading Lookups](https://documentation.devexpress.com/WindowsForms/116018/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Cascading-Lookups)
 - [ColumnView.ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor)
 
