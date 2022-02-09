@@ -8,7 +8,7 @@
 
 In v16.1 and higher, a standalone Lookup editor supports automatic filtering of its popup data source based on a value of another standalone Lookup editor. See the following topic for more information: [Cascading Lookups](https://documentation.devexpress.com/WindowsForms/116018/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Cascading-Lookups).
 
-This example demonstrates how to filter a Lookup editor's data source based on another Lookup editor's value when the editors are embedded in cells of a container control (for instance, a GridControl). The code handles the [ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor) event to accomplish this task.
+This example demonstrates how to filter a Lookup editor's data source based on another Lookup editor's value when the editors are embedded in cells of a container control (for instance, a [Grid Control](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl)). The code handles the [ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor) event to accomplish this task.
 
 <!-- default file list -->
 ## Files to Look At
