@@ -3,20 +3,21 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E898)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
+# Lookup Editors for Windows Forms - How to filter a second Lookup column based on a first LookUp column's value within a Grid Control
+
+In v16.1 and higher, a standalone Lookup editor supports automatic filtering of its popup data source based on a value of another standalone Lookup editor. See the following topic for more information: [Cascading Lookups](https://documentation.devexpress.com/WindowsForms/116018/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Cascading-Lookups).
+
+This example demonstrates how to filter a Lookup editor's data source based on another Lookup editor's value when the editors are embedded in cells of a container control (for instance, a GridControl). The code handles the [ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor) event to accomplish this task.
+
+<!-- default file list -->
+## Files to Look At
 * **[MainForm.cs](./CS/DxSample/MainForm.cs) (VB: [MainForm.vb](./VB/DxSample/MainForm.vb))**
 <!-- default file list end -->
-# How to filter a second LookUp column based on a first LookUp column's value
 
+## Documentation 
+- [Cascading Lookups](https://documentation.devexpress.com/WindowsForms/116018/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Cascading-Lookups)
+- [ColumnView.ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor)
 
-<p>This is an example for the <a href="https://www.devexpress.com/Support/Center/p/A237">How to filter a second LookUp column based on a first LookUp column's value</a> Knowledge Base article. Please refer to the article for the explanation.</p>
-
-<b>See also:</b>
-
-[DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
-
-<br/>
-
-
+## See Also
+- [DevExpress WinForms Troubleshooting - LookUp Editors](https://go.devexpress.com/CheatSheets_WinForms_Examples_T929986.aspx)
