@@ -4,14 +4,25 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Lookup Editors for Windows Forms - How to filter a second Lookup column based on a first LookUp column's value within a Grid Control
+# WinForms Lookup Editor - How to filter a Lookup column based on the value of another Lookup column in a Grid Control
 
-In v16.1 and higher, a standalone Lookup editor allows you to automatically filter its popup data source based on the value of another standalone Lookup editor. See the following topic for more information: [Cascading Lookups](https://documentation.devexpress.com/WindowsForms/116018/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Cascading-Lookups).
+In v16.1+, a standalone WinForms Lookup editor allows you to automatically filter its popup data source based on the value of another standalone Lookup editor. Read the following help topic for more information and examples: [Cascading Lookups](https://documentation.devexpress.com/WindowsForms/116018/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Cascading-Lookups).
 
-This example demonstrates how to filter a Lookup editor's data source based on another Lookup editor's value when the editors are embedded in cells of a container control (for instance, a [Grid Control](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl)). The code handles the [ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor) event to accomplish this task.
+This example demonstrates how to filter a Lookup editor's data source based on the value of another Lookup editor when both editors are used as cell editors in the [Grid Control](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.GridControl). The example handles the [ShownEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShownEditor) event to implement the required behavior.
+
+```cs
+private void GridView_ShownEditor(object sender, EventArgs e) {
+    ColumnView view = (ColumnView)sender;
+    if (view.FocusedColumn.FieldName == "CityCode") {
+        LookUpEdit editor = (LookUpEdit)view.ActiveEditor;
+        string countryCode = Convert.ToString(view.GetFocusedRowCellValue("CountryCode"));
+        editor.Properties.DataSource = DataContext.GetCitiesByCountryCode(countryCode);
+    }
+}
+```
 
 <!-- default file list -->
-## Files to Look At
+## Files to Review
 * [MainForm.cs](./CS/DxSample/MainForm.cs) (VB: [MainForm.vb](./VB/DxSample/MainForm.vb))
 <!-- default file list end -->
 
